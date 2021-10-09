@@ -1,3 +1,3 @@
 # Pay-Teachers-More
 
- The purpose of this project is to balance out some of the negativity and bring awareness to some of the issues teachers face.
+ The purpose of this project is to bring awareness to some of the issues teachers face, and balance out some of the negative sentiment that are constantly hurled their way. ❤️
