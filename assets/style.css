@@ -1,0 +1,263 @@
+/* line 5, ../scss/style.scss */
+a:link,
+a:visited,
+a:active,
+a:hover {
+  color: #e09f3e;
+  text-decoration: none;
+}
+
+/* line 10, ../scss/style.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 13, ../scss/style.scss */
+html {
+  height: 100%;
+}
+
+/* line 17, ../scss/style.scss */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #335c67;
+  color: #fff3b0;
+  font-family: 'Neuton', georgia, serif;
+}
+.container {
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+.why {
+  text-align: center;
+  color: white;
+  font-size: 2.5em;
+}
+
+.magoo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+}
+
+/* line 28, ../scss/style.scss */
+#share {
+  background: #003049;
+  color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  text-align: right;
+}
+/* line 37, ../scss/style.scss */
+#share .wrap {
+  padding: 12px 24px 0;
+}
+/* line 40, ../scss/style.scss */
+#share a {
+  color: #fff !important;
+}
+
+/* line 73, ../scss/style.scss */
+#frames {
+  position: relative;
+  width: 100%;
+}
+/* line 268, ../scss/lib/_mixins.scss */
+#frames .frame {
+  display: block;
+}
+/* line 270, ../scss/lib/_mixins.scss */
+#frames .frame.future,
+#frames .frame.past {
+  display: none;
+}
+
+/* line 278, ../scss/lib/_mixins.scss */
+.csstransforms3d #frames .frame {
+  position: absolute;
+  margin-bottom: 12px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-transform-origin: 50% 0 0 50%;
+  -webkit-transform-origin: 50% 0 0 50%;
+  -o-transform-origin: 50% 0 0 50%;
+  -ms-transform-origin: 50% 0 0 50%;
+  transform-origin: 50% 0 0 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -moz-transform: rotateY(0) translateZ(0);
+  -webkit-transform: rotateY(0) translateZ(0);
+  -o-transform: rotateY(0) translateZ(0);
+  -ms-transform: rotateY(0) translateZ(0);
+  transform: rotateY(0) translateZ(0);
+  opacity: 1;
+  display: block;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s
+      cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    opacity 0.5s ease-in-out;
+  -moz-transition: -moz-transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    opacity 0.5s ease-in-out;
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    opacity 0.5s ease-in-out;
+}
+/* line 295, ../scss/lib/_mixins.scss */
+.csstransforms3d #frames .frame.future {
+  -moz-transform: rotateY(60deg) translateZ(350px) translate(200px);
+  -webkit-transform: rotateY(60deg) translateZ(350px) translate(200px);
+  -o-transform: rotateY(60deg) translateZ(350px) translate(200px);
+  -ms-transform: rotateY(60deg) translateZ(350px) translate(200px);
+  transform: rotateY(60deg) translateZ(350px) translate(200px);
+  opacity: 0;
+}
+/* line 300, ../scss/lib/_mixins.scss */
+.csstransforms3d #frames .frame.past {
+  -moz-transform: rotateY(-60deg) translateZ(350px) translate(-200px);
+  -webkit-transform: rotateY(-60deg) translateZ(350px) translate(-200px);
+  -o-transform: rotateY(-60deg) translateZ(350px) translate(-200px);
+  -ms-transform: rotateY(-60deg) translateZ(350px) translate(-200px);
+  transform: rotateY(-60deg) translateZ(350px) translate(-200px);
+  opacity: 0;
+}
+/* line 305, ../scss/lib/_mixins.scss */
+.csstransforms3d #frames .frame.loading {
+  visibility: hidden;
+}
+/* line 77, ../scss/style.scss */
+#frames .frame {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 700px;
+  margin-left: -350px;
+}
+
+/* line 87, ../scss/style.scss */
+.bfd {
+  margin-top: 24px;
+}
+/* line 89, ../scss/style.scss */
+.bfd a {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  cursor: pointer;
+  font-family: 'ProximaNovaSemibold';
+  position: relative;
+  padding: 0.5em 0.66em;
+  margin-bottom: 12px;
+  text-align: center;
+  display: inline-block;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -o-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  text-decoration: none;
+  white-space: normal;
+  -moz-box-shadow: rgba(255, 255, 255, 0.4) 1px 1px 0 0 inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.4) 1px 1px 0 0 inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.4) 1px 1px 0 0 inset;
+  box-shadow: rgba(255, 255, 255, 0.4) 1px 1px 0 0 inset;
+  color: #fff;
+  border: 1px solid #666;
+  border-color: rgba(20, 20, 20, 0.15);
+  background: #540b0e;
+
+  font-size: 22px;
+  color: white !important;
+  border-color: black solid;
+}
+
+/* line 96, ../scss/style.scss */
+.text {
+  display: block;
+  line-height: 48px;
+  font-size: 42px;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* line 102, ../scss/style.scss */
+.footnote {
+  margin: 16px 0 0;
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* line 115, ../scss/style.scss */
+#links {
+  display: block;
+  float: right;
+  text-align: right;
+}
+
+/* line 121, ../scss/style.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/* line 124, ../scss/style.scss */
+.clearfix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 131, ../scss/style.scss */
+#credits {
+  font-size: 12px;
+}
+
+@media only screen and (max-device-width: 320px) {
+  /* line 140, ../scss/style.scss */
+  body {
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    display: block;
+  }
+
+  /* line 180, ../scss/style.scss */
+  #share {
+    display: none;
+  }
+}
